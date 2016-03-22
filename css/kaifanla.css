@@ -1,0 +1,43 @@
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+.page {
+  transition: all 1.5s linear ;
+  position: absolute;
+  width: 100%;
+}
+.page.ng-leave {
+  opacity: 1;
+}
+.page.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+.page.ng-enter {
+  opacity: 0;
+}
+.page.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.start {
+  height: 100%;
+}
+.start h1 {
+  color: #3172A7;
+  font-size: 6em;
+  font-weight: bold;
+}
+.start img {
+  margin: 0 auto;
+}
+.main {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.footer-menu {
+  line-height: 50px;
+  margin-bottom: 0;
+}
+hr {
+  margin: 10px 0;
+}

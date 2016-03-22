@@ -1,0 +1,57 @@
+body{
+  position: relative;
+  overflow-x: hidden;
+}
+.page{
+  transition:all 1.5s linear ;
+  position: absolute;
+  width: 100%;
+}
+//要离开的ngView元素动画开始是的样式
+.page.ng-leave{
+  //left:0;
+  opacity: 1;
+  //transform: rotateY(0deg);
+}
+//动画要离开的ngView元素动画结束时的样式
+.page.ng-leave.ng-leave-active{
+  //left:-100%;
+  opacity: 0;
+  //transform: rotateY(180deg);
+}
+.page.ng-enter{
+  //left:100%;
+  opacity: 0;
+  //transform: rotateY(-180deg);
+}
+.page.ng-enter.ng-enter-active{
+  //left:0;
+  opacity: 1;
+  //transform: rotateY(0deg);
+}
+
+//start页面样式
+.start{
+  height: 100%;
+}
+.start h1{
+  color: #3172A7;
+  font-size: 6em;
+  font-weight: bold;
+}
+.start img{
+  margin:0 auto;
+}
+
+//main页面样式
+.main{
+   margin-top:60px;
+  margin-bottom: 60px;
+ }
+.footer-menu{
+  line-height: 50px;
+  margin-bottom: 0;
+}
+hr{
+  margin: 10px 0;
+}

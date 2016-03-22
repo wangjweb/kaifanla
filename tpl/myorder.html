@@ -1,0 +1,29 @@
+<div ng-include="'tpl/header.html'"></div>
+<div class="main">
+    <div class="container">
+        <h3 class="text-center">我的订单</h3>
+        <table class="table table-bordered" >
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>菜品</th>
+                <th>下单时间</th>
+                <th>联系人</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody ng-repeat="d in myorder">
+            <tr>
+                <td>{{d.oid}}</td>
+                <td><img ng-src="img/{{d.img_sm}}" alt=""/></td>
+                <td>{{d.order_time|date:'yyyy-MM-dd'}}</td>
+                <td>{{d.user_name}}</td>
+                <td>
+                    <button type="button" class="btn btn-danger">删除</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div ng-include="'tpl/footer.html'"></div>
